@@ -131,7 +131,7 @@ READING AND WRITING DATA
 	IOException
 
 CLOSING THE STREAM 
-	- O/O stream need to close to avoid resource leaks
+	- I/O stream need to close to avoid resource leaks
 	- Closeable
 	- try‐with‐resources statement
 	- use var to shorten the declarations

@@ -241,6 +241,7 @@ Copy-on-Write Collections
 Concurrent Collections
 	- concurrently read and modified by multiple threads, but without the
 	copy-on-write behavior seen in the copy-on-write collections	
+	-  inconsistencies issue
 	
 Blocking Queues
 	ArrayBlockingQueue
@@ -254,5 +255,32 @@ Special-Purpose Queues
 The LinkedTransferQueue
 
 CPU-Intensive vs. I/O-Intensive Tasks
+
+Use the Parallel Fork/Join Framework
+	- Sometimes, you don't have multiple tasks; instead, you have one really big task.
+Divide and Conquer
+	- When using the Fork-Join Framework, your tasks will be coded to decide how
+	many levels of recursion (how many times to subdivide) are appropriate. 
 	
-			
+	- "paint the fence"
+	
+ForkJoinPool
+	- Any problem that can be recursively divided can be solved using Fork-Join
+	Anytime you want to perform the same operation on a
+	collection of elements (painting thousands of fence planks or initializing
+	100,000,000 array elements), consider using Fork-Join.
+	- Runtime.availableProcessors() method to determine the level of parallelism
+	
+ForkJoinTask
+	- to represent the task that should be accomplished	
+	This is different from other executor services that primarily used either Runnable or Callable
+	- the following methods are important: compute(), fork(), and join()
+	
+	- With the Fork-Join Framework, each thread in the ForkJoinPool has a queue of
+	the tasks it is working on; this is unlike most ExecutorService implementations
+	that have a single shared task queue.
+	- The fork() method places a ForkJoinTask in the current thread's task queue
+	-  you can't call fork() unless you are within a ForkJoinTask that is being executed by a ForkJoinPool.
+Work Stealing
+		
+	
