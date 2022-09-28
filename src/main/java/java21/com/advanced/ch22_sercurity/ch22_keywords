@@ -57,10 +57,7 @@ WHITELIST VS. BLACKLIST
 	- The problem with a blacklist is that you
 	have to be cleverer than the bad guys. There are a lot of ways to cause harm
 	
-	-  Whitelisting is
-		preferable to blacklisting for security because a whitelist
-		doesn't need to foresee every possible problem.
-		
+	-  Whitelisting is preferable to blacklisting for security because a whitelist doesn't need to foresee every possible problem.
 	Security decisions are often about trading convenience for lower risk.	
 
 Working with Confidential Information
