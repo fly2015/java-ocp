@@ -22,7 +22,7 @@ public class MultipleTermsFor
         {
             System.out.print(y + " ");
         }
-        System.out.print(x + " ");
+        System.out.print(x + "x ");
     }
 }
 

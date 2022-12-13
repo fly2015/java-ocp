@@ -95,4 +95,8 @@ all modules
 - Oracle recommends using JAR files for most modules
 - jmod is only for working with the JMOD files
 
-				
+
+***
+The requires transitive keyword is
+used when specifying a module to be used by the requesting
+module and any other modules that use the requesting module.				

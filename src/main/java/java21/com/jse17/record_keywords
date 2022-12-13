@@ -1,0 +1,14 @@
+Members Automatically Added to Records
+	Constructor: A constructor with the parameters in the same order as the record declaration
+	Accessor method: One accessor for each field
+	equals()
+	hashCode()
+	toString()
+	
+Fun fact: it is legal to have a record without any fields. It is simply declared with the record keyword and parentheses	
+
+Understanding Record Immutability
+	records don’t have setters
+	every field is inherently final
+	records are also implicitly final -> can not extend
+	The final modifier is optional but assumed.

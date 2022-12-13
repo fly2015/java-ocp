@@ -121,7 +121,7 @@ Understanding Thread-Safety
 	- "a race condition" -> the unexpected result of two tasks executing at the same time is referred to as a race condition.
 	
 Accessing Data with volatile
-	- The volatile attribute ensures that only one thread is modifying a variable at one time
+	- The volatile attribute ensures that only one thread is modifying a variable at one time(visibility not atomicity)
 	and that data read among multiple threads is consistent	
 
 Protecting Data with Atomic Classes
@@ -216,7 +216,7 @@ Orchestrating Tasks with a CyclicBarrier
 	
 Using Concurrent Collections
 	Understanding Memory Consistency Errors
-	-  A "memory consistency error" occurs when two threads have inconsistent views of what should be the same data.
+	- A "memory consistency error" occurs when two threads have inconsistent views of what should be the same data.
 	
 	- The concurrent classes were created to help avoid common issues in which multiple threads are adding and removing objects from the same collections
 	ConcurrentHashMap	
@@ -268,7 +268,7 @@ Livelock
 
 Managing Race Conditions
 	- A "race condition" is an undesirable result that occurs when two tasks that should be completed sequentially are completed at the same time.
-	- that race conditions lead to invalid data if they are not properly handled
+	- That race conditions lead to invalid data if they are not properly handled
 
 Working with Parallel Streams
 	-  A "serial stream" is a stream in which the results are ordered, with

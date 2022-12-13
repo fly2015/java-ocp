@@ -7,6 +7,8 @@
  */
 package java21.com.advanced.ch15_functional.build_in;
 
+import java.util.function.UnaryOperator;
+
 /**
  * 
  *
@@ -15,7 +17,7 @@ package java21.com.advanced.ch15_functional.build_in;
  */
 public class UnaryOperatorDemo
 {
-
+    UnaryOperator<String> u = a -> "";
 }
 
 

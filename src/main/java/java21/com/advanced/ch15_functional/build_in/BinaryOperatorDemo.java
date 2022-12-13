@@ -7,6 +7,8 @@
  */
 package java21.com.advanced.ch15_functional.build_in;
 
+import java.util.function.BinaryOperator;
+
 /**
  * 
  *
@@ -15,7 +17,7 @@ package java21.com.advanced.ch15_functional.build_in;
  */
 public class BinaryOperatorDemo
 {
-
+    BinaryOperator<String> x = (a, b) -> "";
 }
 
 

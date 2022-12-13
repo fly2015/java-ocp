@@ -21,6 +21,7 @@ public class PredicateDemo
     {
         Predicate<String> pre0 = (s) -> !s.equals("");
         Predicate<String> pre1 = s -> s.length() > 2;
+        Predicate<String> pre2 = (s) -> {return !s.equals("");};
         
         //
         Predicate<String> preAnd = pre0.and(pre1);

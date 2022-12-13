@@ -27,6 +27,10 @@ public class ToArrayNotices
          
          System.out.println(Arrays.toString(stringArray));
          System.out.println(stringArray.length);
+         
+         
+         String[] stringArray3 = list1.toArray(new String[3]);
+         System.out.println(stringArray3[2]);
     }   
 }
 

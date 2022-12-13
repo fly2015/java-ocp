@@ -14,6 +14,8 @@ class Rectangle extends Shape {void draw() {}}
 
 class Meta {};
 
+class X extends Meta {void draw() {}}
+
 public class TestKnownledge {
 
     public static void main(String[] args) {
@@ -28,10 +30,16 @@ public class TestKnownledge {
         //? super Shape i.e. can use any super type of Shape, here Shape is Lower Bound in inheritance hierarchy
         List<? super Shape> inList5 = new ArrayList<Shape>();
         inList5.add(new Circle()); // can add this
+        inList5.add(new Shape()); // can do this
         List<? super Shape> inList6 = new ArrayList<Object>();
         inList6.add(new Circle()); // can do this
+        inList6.add(new Shape()); // can do this
+        //inList6.add(new Meta()); // can not
+        //inList6.add(new X()); can not
         //List<? super Shape> inList7 = new ArrayList<Circle>(); //ERROR.
-
+        List<? super Shape> inList7 = new ArrayList<Meta>();
+        //List<? super Shape> inList8 = new ArrayList<X>(); X is supertype of Shape even both X and shape are chilren of Meta
+        
         //-----------------------------------------------------------
         Circle circle = new Circle();
         Shape shape = circle; // OK. Circle IS-A Shape
@@ -56,6 +64,10 @@ public class TestKnownledge {
         //
         List<Meta> list = new ArrayList<>();
         new TestKnownledge().testContraVariance(list);
+        
+        
+       // List<? super Shape> list1234 = new ArrayList<Circle>();//ERROR can not refer to a sub typelist, but can I sub type to list
+        List<? super Shape> list1234 = new ArrayList<Meta>();
     }
 
     

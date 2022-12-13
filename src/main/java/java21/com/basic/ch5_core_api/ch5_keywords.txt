@@ -147,13 +147,13 @@ Understanding Java Arrays
 	COMPARING
 		negate number -> first is smaller than second
 		zero -> equal
-		positive -> first is grater than the second
+		positive -> first is greater than the second
 		
 		same length, same value in each spot in the same order -> 0
 		all the elements same, the second has extra elem -> negative else positive
 		first elem of first array are smaller -> negative else positive
 		
-		Samller means:
+		smaller means:
 			null is smaller than any other value.
 			for string numbers are smaller than letters
 			uppercase is smaller than lowercase.
@@ -230,7 +230,7 @@ SET
 	 add(value) -> if trying to add a duplicate value, the method returns false and does not add the value
 	 
 	 HashSet is the most common
-	 TreeSet isused when sorting is important.
+	 TreeSet is used when sorting is important.
 	 
 Map	 
 	 - method () -> Returns previous value or null if none

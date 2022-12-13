@@ -22,8 +22,8 @@ public class FilesCopyDemo
 {
     public static void main(String[] args) throws IOException
     {
-        Path source = Paths.get(System.getProperty("user.dir"), "//src//main//resources" + "//data");
-        Files.copy(source, Path.of("how", "copiedTest"));
+        Path source = Paths.get(System.getProperty("user.dir"), "how/module.txt");
+        Files.copy(source, Path.of("how", "copiedTest", "module.txt"));
     }
 }
 

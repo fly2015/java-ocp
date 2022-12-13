@@ -26,14 +26,14 @@ public class FilesDeepCopy
 {
     public static void main(String[] args) throws IOException
     {
-        Path source = Paths.get(System.getProperty("user.dir"), "//src//main//resources" + "//data");
+        Path source = Paths.get(System.getProperty("user.dir"), "//data");
         //Files.list(source).forEach(System.out::println);
         //copyPath(source, Path.of("how", "dataCopy"));
         Files.walk(source, FileVisitOption.FOLLOW_LINKS).forEach( p ->
         {
             try
             {
-                Files.copy(p, Path.of("how", p.getFileName().toString()));
+                Files.copy(p, Path.of("how", "dataCopyNoDeep", p.getFileName().toString()));
             }
             catch (IOException e)
             {
