@@ -1,4 +1,4 @@
-package java21.com.jse17.record;
+package java21.com.jse17.recordclass;
 
 public record Crane(int numberEggs, String name) {
     public Crane(int numberEggs, String name) 

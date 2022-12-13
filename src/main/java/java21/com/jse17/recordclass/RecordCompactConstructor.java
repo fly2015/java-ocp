@@ -1,4 +1,4 @@
-package java21.com.jse17.record;
+package java21.com.jse17.recordclass;
 
 public record RecordCompactConstructor(int numberEggs, String name) 
 {
