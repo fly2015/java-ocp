@@ -1,0 +1,18 @@
+Defining Text Blocks
+  Also known as multiline strings.
+  A text block starts and ends with three double quotes (""")
+  The contents don’t need to be escaped
+  
+  Essential whitespace is part of your String and is important to you
+  Incidental whitespace just happens to be there to make the code easier to read
+  
+  Text blocks require a line break after the opening """
+  The \ tells Java not to add a new line before 
+  
+  
+ Creating Dates and Times
+ LocalDate
+ LocalTime
+ LocalDateTime
+ ZonedDateTime
+  
