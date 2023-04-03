@@ -7,7 +7,7 @@ CLASSPATH VS. MODULE PATH
 	
 NAMED MODULES
 	- A named module is one containing a module‐info file
-	this file appears in the root of the JAR alongside one or more packages
+	this file appears in the root of the JAR along side one or more packages
 	- Named modules appear on the module path rather than the classpath
 	 * a named module has the name inside the module‐info file and is on the module path
 	 
@@ -135,7 +135,7 @@ the service includes:
 - The service also includes the lookup functionality
 
 CREATING A SERVICE LOCATOR
-	- A service locator is able to find a  any classes that implement a service
+	- A service locator is able to find a any classes that implement a service
 	provider interface.
 	- Java provide ServiceLocator.load()
 	- it is best to cache ServiceLocator.load().

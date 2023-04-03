@@ -5,7 +5,7 @@
 		
 - The Java Platform Module System (JPMS)
 The main purpose of a module is to provide groups of related packages to offer a particular set of functionality to developers. 
-It’s like a JAR file except a developer chooses which packages are accessible outside the module.
+Itï¿½s like a JAR file except a developer chooses which packages are accessible outside the module.
 
 
 EXPLORING A MODULE
@@ -44,7 +44,7 @@ Creating and Running a Modular Program
 	
 	CAN A MODULE-INFO.JAVA FILE BE EMPTY?
 	Yes. As a bit of trivia, it was legal to compile any empty file with a .java
-	extension even before modules. The compiler sees there isn’t a class in
+	extension even before modules. The compiler sees there isnï¿½t a class in
 	there and exits without creating a .class file.	
 	
 ORDER MATTERS!
@@ -64,12 +64,12 @@ exports
 requires
 	- current module depends on a specified module
 	REQUIRES TRANSITIVE
-		- A depend on B, C depend on A then C depend on B
+		- A depend on B and B depend on C then A depend on C
 	Effects of requires transitive
-		A, C can not compiled or executed without access to C
+		A, B can not compiled or executed without access to C
 	
 	Duplicate requires Statements
-		Java doesn’t allow you to repeat the same module in a requires clause
+		Java doesnï¿½t allow you to repeat the same module in a requires clause
 	
 provides ... with
 	- specifies that a class provides an implementation of a service

@@ -55,6 +55,14 @@ public class TextBlockTrickyDemo
                          "baboon"
                          "gorilla"
                          """);
+        
+
+        //the last three quotes must be escaped -> there are three quotes in a row
+        var quotes = """
+                "The Quotes that Could"
+                \"""
+                """;
+        System.out.println(quotes);
     }
 }
 
