@@ -46,7 +46,7 @@ THE JAR COMMAND
 THE JDEPS COMMAND	
 	
 	jdeps -s <module-file-path>
-	deps -summary <module-file-path> (only one dash)
+	jdeps -summary <module-file-path> (only one dash)
 	jdeps <module-file-path>
 	
 	jdeps -s/-summary --module-path <module-paths> <module-path-file> <module-path-file-dependency>
