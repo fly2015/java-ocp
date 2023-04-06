@@ -23,6 +23,7 @@ public class TextBlockDemo
                 I'm here.
                 """;
         System.out.println(block1);
+        System.out.println("Here");
         
         // The contents do not need to be escaped
         String block2 = """
@@ -44,7 +45,15 @@ public class TextBlockDemo
                 I'm here.      a
                 """;
         System.out.println(block4);
-        
+
+
+        // Keep trailing space at the end of the line with \s
+        String block5 = """
+                    Hello! "" 
+                    ABC    \s
+                I'm here.      a
+                """;
+        System.out.println(block5);
     }
 }
 

@@ -2,7 +2,7 @@
  * TextBlockTrickyDemo.java
  *
  * Copyright by CRIF AG
- * Zürich
+ * Zï¿½rich
  * All rights reserved.
  */
 package java21.com.jse17.textblock;
@@ -43,9 +43,9 @@ public class TextBlockTrickyDemo
                 """;
         System.out.println(block4);
         
-        // \s is space
+        // \s is keep spaces of the line before
         String block5 = """
-                Hello!\s 
+                Hello5!          \s 
                 I'm here.
                 """;
         System.out.println(block5);
@@ -63,7 +63,18 @@ public class TextBlockTrickyDemo
                 \"""
                 """;
         System.out.println(quotes);
+
+
+         // Have to have last space at the closing triple quotes
+        var count = 1111;
+        var text1 = """
+                "ape"   \s""" + count + """
+                   \sbaboon"
+                "gorilla" """;
+         System.out.print(text1);
     }
+
+    
 }
 
 

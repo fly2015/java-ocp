@@ -10,5 +10,5 @@ Defining Text Blocks
   The \ tells Java not to add a new line before 
   
   
-   \n gives a blank line since it is at the end ofthe line
+   \n gives a blank line since it is at the end of the line
   

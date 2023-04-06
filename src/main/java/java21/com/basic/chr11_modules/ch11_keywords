@@ -23,10 +23,10 @@ BENEFITS OF MODULES
 		
 	- Custom Java Builds
 		compact profile: mobile/embedded
-		+ 	The Java Platform Module System allows developers to specify what modules they actually need.
+		+ The Java Platform Module System allows developers to specify what modules they actually need.
 		to create a smaller runtime image that is customized to what the application needs and nothing more
 		can run that image without having Java installed at all
-		+ JKINK is used to create this runtime image.
+		+ JLINK is used to create this runtime image.
 		+ In addition to the smaller scale package, this approach improves security
 		
 	- Improved Performance

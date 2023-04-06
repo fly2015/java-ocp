@@ -24,7 +24,7 @@
 	jar cmfv <manifest-path-file> <jar-file> -C <outside-directory> <class-file>
 
 
-#
+#list files that the jar contain
 jar --list --file <jar-file-path>
 
 DESCRIBING MODULES
@@ -60,7 +60,7 @@ THE JMOD COMMAND
 
 javac -p ./libs/commons-lang3-3.12.0.jar -d ./mods/ocp ./src/ocp/exam/*.java ./src/ocp/study/*.java ./src/ocp/module-info.java
 jar cvf  ./mods/ocp.jar  -C ./mods/ocp .
-java --module-path ./mods/ocp/;./libs/commons-lang3-3.12.0.jar -m ocp/ocp.exam.Exam
+java --module-path ./mods/ocp.jar;./libs/commons-lang3-3.12.0.jar -m ocp/ocp.exam.Exam
 
 java -p ./mods/ocp.jar -d ocp
 java -p ./mods/ocp.jar --describe-module ocp

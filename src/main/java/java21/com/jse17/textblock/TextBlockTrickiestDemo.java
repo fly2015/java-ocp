@@ -15,12 +15,21 @@ public class TextBlockTrickiestDemo
 {
     public static void main(String[] args)
     {
+        // Keep the trailing spaces with \s, avoid line break with \  and line break with \n
         var text = """
                 ant antelope \s \n
                 cat "kitten" \
                 seal sea lion
                 """;
         System.out.print(text);
+
+        // Refer variables
+        var text1 = """
+                ant antelope \s \n
+                cat "kitten" \
+                seal sea lion
+                """;
+        System.out.print(text1);
     }
 }
 
