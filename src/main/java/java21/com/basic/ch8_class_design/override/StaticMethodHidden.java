@@ -1,6 +1,6 @@
 package java21.com.basic.ch8_class_design.override;
 
-public class StaticMethodHiden {
+public class StaticMethodHidden {
 
     public static void main(String[] args) {
         Parent1 p = new Child1();

@@ -1,11 +1,11 @@
 package java21.com.basic.ch8_class_design.override;
 
-public class PrivateOverride {
+public class CanNotPrivateOverride {
     public static void main(String[] args) {
         Parent p = new Child();
         //p.test1(); //DO not compile
 
-        Child c = new Child();
+        var c = new Child();
         c.test1();
     }
 }

@@ -20,8 +20,8 @@ public class PathViewDemo
 {
     public static void main(String[] args)
     {
-        Path path = Paths.get("./land/hippo/harry.happy");
-        
+        Path path = Paths.get("./land/hippo/harry.happy");//4
+        //Path path = Paths.get("/land/hippo/harry.happy");//3
         System.out.println("The Path Name is: " + path);
         for (int i = 0; i < path.getNameCount(); i++)
         {

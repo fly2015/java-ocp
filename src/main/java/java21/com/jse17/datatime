@@ -3,3 +3,7 @@
 	 LocalTime
 	 LocalDateTime
 	 ZonedDateTime
+	 Period
+	 Duration
+	 Instant
+	 TemporalUnit -> ChronoUnit
