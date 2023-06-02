@@ -27,7 +27,8 @@ public class CollectorDemo
         List<String> list = List.of("Abc", "Bcde", "Cde", "Def");
         
         BinaryOperator<String> mergeFunction = (s, y) -> y + "-" + s;
-        list.stream().collect(Collectors.toMap(String::length, s -> s, mergeFunction)).forEach((k, v) -> System.out.println(k + ": " + v));;
+        Map<Integer, String> collect = list.stream().collect(Collectors.toMap(String::length, s -> s, mergeFunction));
+        collect.forEach((k, v) -> System.out.println(k + ": " + v));;
         
         Supplier<Map<Integer, String>> mapF = TreeMap::new;
         list.stream().collect(Collectors.toMap(String::length, s -> s, mergeFunction, mapF));
