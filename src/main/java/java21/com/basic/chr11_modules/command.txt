@@ -65,3 +65,14 @@ java --module-path ./mods/ocp.jar;./libs/commons-lang3-3.12.0.jar -m ocp/ocp.exa
 java -p ./mods/ocp.jar -d ocp
 java -p ./mods/ocp.jar --describe-module ocp
 java -p ./mods/ocp.jar --list-modules
+
+
+==========================================
+TEST
+==========================================
+javac -d ./mods/hng ./src/hng/*.java
+java -p ./mods/hng -m hng.test/hng.Test
+jar cvf  ./mods/hng.jar  -C ./mods/ocp .
+java -p ./mods/hng.jar -m hng.test/hng.Test
+jlink --module-path ./mods/hng.jar;D:\jdk-17.0.3.1\jmods --add-modules hng.test,java.base  --output ./jlink_mods --compress none
+jlink --module-path ./mods/hng.jar;D:\jdk-17.0.3.1\jmods --add-modules hng.test,java.base  --output ./jlink_mods --launcher hngrun=hng.test/hng.Test --compress=2
