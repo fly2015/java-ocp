@@ -1,24 +1,40 @@
 package java21.com.advanced.ch15_functional.stream.collect;
 
-import java.util.IntSummaryStatistics;
-import java.util.function.BiConsumer;
-import java.util.stream.Collector;
+import java.util.List;
+import java.util.LongSummaryStatistics;
+import java.util.Map;
+import java.util.Set;
+import java.util.function.ToIntFunction;
+import java.util.function.ToLongFunction;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import java21.com.advanced.ch14_generic_and_collection.collection.Person;
-
 public class CollectorsDemo {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
+        Map<Boolean, List<String>> collect = List.of("b", "b", "c").stream().collect(Collectors.groupingBy(s -> s.contains("b")));
+        Map<Boolean, List<String>> collect1 = Set.of("b", "c").stream().collect(Collectors.groupingBy(s -> s.contains("b")));
+        //Map<Boolean, List<String>> collect2 = List.of("b", "b", "c").stream().collect(Collectors.partitioningBy(s -> s.contains("b")));
+
         record Person(int age){}
-        record SumPerson(long count, int sum){}
-        
-        var stream = Stream.of(new Person(1), new Person(2), new  Person(3));
-       // BiConsumer<Person, Person> merge = (p1, p2) -> { return;};
-        Collector<Object, ? , Long> counting = Collectors.counting();
-        Collector<Person, ? , IntSummaryStatistics> summarizingInt = Collectors.summarizingInt(Person::age);
-        //BiConsumer<Collectors> func = 
-       // stream.collect(Collectors.teeing(counting, summarizingInt), func);
+        record SumPerson(long count, int sum){};
+
+        // Count and get sum of age
+        Stream<Person> stream1 = Stream.of(new Person(1), new Person(2), new Person(3));
+        Integer sum1 = stream1.map(person -> person.age()).collect(Collectors.summingInt(value -> value));
+        System.out.println(sum1);
+
+        //
+        Stream<Person> stream2 = Stream.of(new Person(1), new Person(2), new Person(3));
+        ToLongFunction<Person> func = (p) -> p.age();
+        LongSummaryStatistics sum2 = stream2.collect(Collectors.summarizingLong(func));
+        System.out.println(sum2.getCount());
+        System.out.println(sum2.getSum());
+
+
+        //
+        ToIntFunction<Person> func1 = (p) -> p.age();
+        Stream<Person> stream3 = Stream.of(new Person(1), new Person(2), new Person(3));
+        SumPerson sumPerson = stream3.collect(Collectors.teeing(Collectors.counting(), Collectors.summingInt(func1), (count, num) -> { return new SumPerson(count, num);}));
+        System.out.println(sumPerson);
     }
 }
