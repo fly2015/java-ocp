@@ -1,9 +1,7 @@
 package java21.com.jse17.datetime;
 
 import java.time.*;
-import java.time.chrono.Chronology;
 import java.time.temporal.ChronoUnit;
-import java.util.Date;
 
 public class DateTimeDemo {
     public static void main(String[] args) {

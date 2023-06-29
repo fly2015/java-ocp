@@ -8,6 +8,7 @@
 package java21.com.jse17.localization;
 
 import java.time.Duration;
+import java.time.temporal.ChronoUnit;
 
 /**
  * 
@@ -20,6 +21,7 @@ public class DurationDemo
     public static void main(String[] args)
     {
         System.out.println(Duration.ofMillis(1000000000));
+        System.out.println(Duration.of(10, ChronoUnit.MONTHS)); //Unit must not have an estimated duration
     }
 }
 

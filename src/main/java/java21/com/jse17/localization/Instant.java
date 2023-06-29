@@ -33,6 +33,8 @@ public class Instant
         System.out.println(instant);
         instant = instant.plus(1, ChronoUnit.DAYS);
         System.out.println(instant);
+        
+        System.out.println(instant.plus(1, ChronoUnit.WEEKS)); //Unsupported unit: Weeks
     }
 }
 

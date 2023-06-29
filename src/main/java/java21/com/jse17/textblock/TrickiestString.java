@@ -5,7 +5,7 @@
  * Zürich
  * All rights reserved.
  */
-package java21.com.jse17;
+package java21.com.jse17.textblock;
 
 /**
  * 
@@ -33,8 +33,10 @@ public class TrickiestString
         // adds the normalizing line break while indent 0 or a negative
         var phrase = "prickly \nporcupine";
         System.out.println(phrase.length());
+        System.out.println(phrase.indent(1));
         System.out.println(phrase.indent(1).length());
         System.out.println(phrase.indent(0).length());
+        System.out.println(phrase.indent(0));
         System.out.println(phrase.indent(-1).length());
         
         //translate escape -> remove escape

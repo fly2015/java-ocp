@@ -8,7 +8,6 @@
 package java21.com.jse17.localization;
 
 import java.time.LocalTime;
-import java.time.temporal.ChronoUnit;
 
 /**
  * 
@@ -22,8 +21,6 @@ public class DateTimeDemo
     {
         var time = LocalTime.of(1,2,3,4);
         System.out.println(time);
-        
-        var x = ChronoUnit.HOURS;
     }
 }
 

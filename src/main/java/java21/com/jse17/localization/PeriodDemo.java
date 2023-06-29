@@ -7,6 +7,7 @@
  */
 package java21.com.jse17.localization;
 
+import java.time.Duration;
 import java.time.Period;
 
 /**
@@ -21,8 +22,8 @@ public class PeriodDemo
     {
         int days = Period.ofDays(10).getDays();
         System.out.println(days);
-        
-        System.out.println(true^false);
+        System.out.println(Period.ofDays(10).plus(Period.ofDays(10)).getDays()); 
+        System.out.println(Period.ofDays(10).plus(Duration.ofDays(10)));//Unit must be Years, Months or Days, but was Seconds
     }
 }
 

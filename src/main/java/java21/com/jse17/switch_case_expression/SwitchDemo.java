@@ -1,4 +1,4 @@
-package java21.com.jse17;
+package java21.com.jse17.switch_case_expression;
 
 public class SwitchDemo {
     enum Type{

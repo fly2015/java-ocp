@@ -5,7 +5,7 @@
  * Zürich
  * All rights reserved.
  */
-package java21.com.jse17;
+package java21.com.jse17.datetime;
 
 import java.time.LocalDate;
 import java.time.Month;
