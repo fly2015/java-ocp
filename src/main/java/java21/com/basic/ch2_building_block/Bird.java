@@ -1,8 +1,8 @@
 /*
  * Bird.java
  *
- * Copyright by CRIF AG
- * Zürich
+ * Copyright by Hien Ng
+ * Da Nang
  * All rights reserved.
  */
 package java21.com.basic.ch2_building_block;

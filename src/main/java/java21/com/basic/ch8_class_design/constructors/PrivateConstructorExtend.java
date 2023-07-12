@@ -1,8 +1,8 @@
 /*
  * PrivateConstructorExtend.java
  *
- * Copyright by CRIF AG
- * Zürich
+ * Copyright by Hien Ng
+ * Da Nang
  * All rights reserved.
  */
 package java21.com.basic.ch8_class_design.constructors;

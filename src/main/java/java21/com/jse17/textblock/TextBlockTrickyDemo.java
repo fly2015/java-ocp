@@ -1,7 +1,7 @@
 /*
  * TextBlockTrickyDemo.java
  *
- * Copyright by CRIF AG
+ * Copyright by Hien Ng
  * Z�rich
  * All rights reserved.
  */

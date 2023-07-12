@@ -1,8 +1,8 @@
 /*
  * BillionLaughsAttackDemo.java
  *
- * Copyright by CRIF AG
- * Zürich
+ * Copyright by Hien Ng
+ * Da Nang
  * All rights reserved.
  */
 package java21.com.advanced.ch22_sercurity;
