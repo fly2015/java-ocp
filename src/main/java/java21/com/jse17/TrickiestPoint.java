@@ -29,12 +29,14 @@ public class TrickiestPoint
         getX(5);
         
         // Only have 28/29 on Feb
-        var date1 = LocalDate.of(2022, Month.MARCH, 3);
-        var date2 = LocalDate.of(2022, Month.FEBRUARY, 31);
-        System.out.println(date1.equals(date2));
+        /*
+         * var date1 = LocalDate.of(2022, Month.MARCH, 3);
+         * var date2 = LocalDate.of(2022, Month.FEBRUARY, 31);
+         * System.out.println(date1.equals(date2));
+         */
         
         // Have to have last space at the closing triple quotes
-        System.out.print("""
+        System.out.println("""
                          "ape"
                          "baboon"
                          "gorilla" """);
@@ -43,7 +45,7 @@ public class TrickiestPoint
         //substring with begin index
         var builder = "54321";
         builder = builder.substring(4);
-        System.out.println(builder.charAt(2));
+        //System.out.println(builder.charAt(2));
         
         
         // ternary not required parentheses
@@ -51,6 +53,9 @@ public class TrickiestPoint
         int day = 3;
         var dinner = ++time >= 10 ? day-- <= 2
         ? "Takeout" : "Salad" : "Leftovers";
+
+        // indent to add a line break
+        System.out.print("hien".indent(-1));
     }
     
     public static void getX(int x)

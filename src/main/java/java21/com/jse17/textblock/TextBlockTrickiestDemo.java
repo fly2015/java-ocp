@@ -15,7 +15,7 @@ public class TextBlockTrickiestDemo
 {
     public static void main(String[] args)
     {
-        // Keep the trailing spaces with \s, avoid line break with \  and line break with \n
+        // Keep the trailing spaces and add a space with \s, avoid line break with \  and line break with \n
         var text = """
                 ant antelope \s \n
                 cat "kitten" \

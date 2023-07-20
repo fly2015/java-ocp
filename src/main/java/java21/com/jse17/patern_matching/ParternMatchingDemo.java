@@ -19,11 +19,11 @@ public class ParternMatchingDemo
     {
         Integer x = 123;
         // Limitations of Subtype Enforcement -> Does not compile
-        /*
-         * if (x instanceof Integer data)
-         * {
-         * }
-         */
+        
+          if (x instanceof Integer data)
+          {
+          }
+         
         
         // compile
         if(x instanceof Integer) {}
