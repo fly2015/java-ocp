@@ -30,9 +30,9 @@ public class PathCleaning
         
         var p11 = Paths.get("/pony/../weather.txt");
         var p22 = Paths.get("/weather.txt");
-        System.out.println(p1.equals(p2));
+        System.out.println(p11.equals(p22));
         // false
-        System.out.println(p11.normalize().equals(p22.normalize()));
+        System.out.println(p11.normalize().equals(p22));
         // true
     }
 }

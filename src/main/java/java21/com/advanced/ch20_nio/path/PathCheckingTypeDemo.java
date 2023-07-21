@@ -24,7 +24,8 @@ public class PathCheckingTypeDemo
         System.out.println("Absolute Path1: " + path1.toAbsolutePath());
         var path2 = Paths.get("birds/condor.txt");
         System.out.println("Path2 is Absolute? " + path2.isAbsolute());
-        System.out.println("Absolute Path2 " + path2.toAbsolutePath());
+        //System.getProperty("user.dir") + path
+        System.out.println("Absolute Path2 " + path2.toAbsolutePath()); 
     }
 }
 
