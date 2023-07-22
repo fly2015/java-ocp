@@ -5,7 +5,7 @@
  * Da Nang
  * All rights reserved.
  */
-package java21.com.advanced.ch13_anotation;
+package java21.com.advanced.ch13_annotation;
 
 import java.lang.annotation.Inherited;
 

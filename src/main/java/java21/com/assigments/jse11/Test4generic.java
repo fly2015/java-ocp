@@ -5,7 +5,7 @@
  * Da Nang
  * All rights reserved.
  */
-package java21.com.assessment.jse11;
+package java21.com.assigments.jse11;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -66,7 +66,7 @@ public class Test4generic
     static class Dog extends Animal
     {
         /**
-         * @see java21.com.assessment.jse11.Test4generic.Animal#name()
+         * @see java21.com.assigments.jse11.Test4generic.Animal#name()
          */
         @Override
         void name()
@@ -80,7 +80,7 @@ public class Test4generic
     static class Cat extends Animal
     {
         /**
-         * @see java21.com.assessment.jse11.Test4generic.Animal#name()
+         * @see java21.com.assigments.jse11.Test4generic.Animal#name()
          */
         @Override
         void name()

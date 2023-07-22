@@ -5,9 +5,9 @@
  * Da Nang
  * All rights reserved.
  */
-package java21.com.assessment.jse11.review;
+package java21.com.assigments.jse11.review;
 
-import java21.com.assessment.jse11.Test4ScopeClass;
+import java21.com.assigments.jse11.Test4ScopeClass;
 
 /**
  * 
@@ -19,7 +19,7 @@ public class Test4ScopedClassImpl extends Test4ScopeClass
 {
 
     /**
-     * @see java21.com.assessment.jse11.Test4ScopeClass#testScope()
+     * @see java21.com.assigments.jse11.Test4ScopeClass#testScope()
      */
     @Override
     protected void testScope()

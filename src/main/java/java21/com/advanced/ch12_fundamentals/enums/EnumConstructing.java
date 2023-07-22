@@ -24,7 +24,7 @@ public class EnumConstructing
             System.out.print("constructing,");
         }
     }
-    
+
     public static void main(String[] args)
     {
         System.out.print("begin,");

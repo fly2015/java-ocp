@@ -5,7 +5,7 @@
  * Da Nang
  * All rights reserved.
  */
-package java21.com.jse17.localization;
+package java21.com.jse17.datetime;
 
 import java.time.Duration;
 import java.time.Period;

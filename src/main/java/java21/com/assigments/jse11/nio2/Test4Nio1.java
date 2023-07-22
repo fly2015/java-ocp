@@ -5,7 +5,7 @@
  * Da Nang
  * All rights reserved.
  */
-package java21.com.assessment.jse11.nio2;
+package java21.com.assigments.jse11.nio2;
 
 import java.nio.file.Files;
 import java.nio.file.LinkOption;

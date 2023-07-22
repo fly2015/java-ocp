@@ -24,6 +24,15 @@ public class PassingAnonymousInstanceAsMethodParam
 
 class ZooGiftShop
 {
+    // Anonymous is outside method body
+    SaleTodayOnly saleOutSideMethod = new SaleTodayOnly(10)
+    {
+        public int dollarsOff()
+        {
+            return 3 + super.x ;
+        }
+    };
+    
     abstract class SaleTodayOnly
     {
         private int x;

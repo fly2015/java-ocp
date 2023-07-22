@@ -37,6 +37,17 @@ public class LocalClassDemo
         {
             
         };
+        
+        interface A
+        {
+            
+        }
+        
+        enum B
+        {
+            
+        }
+        
         return localClass.getFX();
 
     }

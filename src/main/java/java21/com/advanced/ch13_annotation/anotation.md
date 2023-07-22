@@ -1,63 +1,58 @@
-- Annotations are all about metadata
-- Metadata is data that provides information about other data
+# ANNOTATION
+	- Annotations are all about metadata
+	- Metadata is data that provides information about other data
+	- annotations function a lot like interfaces
+	- annotations establish relationships that make it easier to manage data about our application.
+	- annotations are optional metadata and by themselves do not do anything
 
-- annotations function a lot like interfaces
-- annotations establish relationships that make it easier to manage data about our application.
-- annotations are optional metadata and by themselves do not do anything
+## External Metadata Files
+### Custom Annotations
+	@interface(all lowercase)
+	-  as a top‐level type
+	-  like an inner class
 
-EXTERNAL METADATA FILES
-
-Custom Annotations
-@interface(all lowercase)
--  as a top‐level type
--  like an inner class
-
-SPECIFYING A REQUIRED ELEMENT
+### Specifying A Required Element
 	- annotation element is an attribute that stores values about the particular usage of an annotation
 	- need to have the parentheses around the annotation parameters
 	
-PROVIDING AN OPTIONAL ELEMENT
+### Providing An Optional Element
 	- using default
 	- the order of each element does not matter
 
-** the default value of an annotation must be a non‐ null constant expression.
+	** the default value of an annotation must be a non‐ null constant expression.
 
-SELECTING AN ELEMENT TYPE
+### Selecting An Element Type
 	- an annotation element must be a primitive type, a String, a Class, an enum, another annotation, or an
 	array of any of these types.
 	- dimension array is not supported
 
-APPLYING ELEMENT MODIFIERS
+### Applying Element Modifiers
 	- annotation elements are implicitly abstract and public
 
-ADDING A CONSTANT VARIABLE
+### Adding A Constant Variable
 	- annotation variables are implicitly public, static, and final.
 	
-Applying Annotations
-USING ANNOTATIONS IN DECLARATIONS
+## Applying Annotations
+### Using Annotations In Declarations
 	- Classes, interfaces, enums, and modules
 	- Variables ( static, instance, local)
 	- Methods and constructors
 	- Method, constructor, and lambda parameters
 	- Cast expressions
 	- Other annotations
-		
-		
-	- to use an annotation, all required values must be provided	
+	* To use an annotation, all required values must be provided	
 	
-CREATING A VALUE() ELEMENT
+### Creating A Value() Element
 	An annotation must adhere(tuân thủ) to the following rules to be used without a name:
-	- The annotation declaration must contain an element named
-	value(), which may be optional or required
-	- The annotation declaration must not contain any other elements that are required
-	- The annotation usage must not provide values for any other elements.
+    	- The annotation declaration must contain an element named value(), which may be optional or required.
+    	- The annotation declaration must not contain any other elements that are required.
+    	- The annotation usage must not provide values for any other elements.
 	
-PASSING AN ARRAY OF VALUES
+### Passing An Array Of Values
 	- regular form
-	- shorthand notation -> , where the array braces ( {}) are dropped
-for convenience
+	- shorthand notation -> , where the array braces ({}) are dropped for convenience
 	
-COMBINING SHORTHAND NOTATIONS
+### Combining Shorthand Notations
 	CombineShorthandNatations.java
 	
 	

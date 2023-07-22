@@ -5,7 +5,7 @@
  * Da Nang
  * All rights reserved.
  */
-package java21.com.assessment.jse11;
+package java21.com.assigments.jse11;
 
 import java.util.Comparator;
 import java.util.function.BinaryOperator;

@@ -5,7 +5,7 @@
  * Da Nang
  * All rights reserved.
  */
-package java21.com.assessment.jse11.review;
+package java21.com.assigments.jse11.review;
 
 /**
  * 
