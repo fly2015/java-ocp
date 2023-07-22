@@ -160,4 +160,5 @@
 	Additionally, we still need uses since we are looking up the service interface from another module.
 	
 	
-*** The ServiceLoader sees all service providers -> TourLengthCheck.class
+*** The ServiceLoader sees all service providers
+>TourLengthCheck.class

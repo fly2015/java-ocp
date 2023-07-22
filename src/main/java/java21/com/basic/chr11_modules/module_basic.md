@@ -55,9 +55,8 @@
 ## Directives inside module-info.java
 ### exports
 	- exports a package to other modules
-	exports ... to
-	- export a package to a specific module
-		
+### exports ... to
+	- export a package to a specific module	
 #### Exported Types	
 	- public classes, interfaces, and enums are exported
 	- public and protected fields and methods
@@ -65,10 +64,11 @@
 		 
 ### requires
 	- current module depends on a specified module
-####  requires transitive
+#### requires transitive
 	- A depend on B and B depend on C then A depend on C
 	Effects of requires transitive: A, B can not compiled or executed without access to C
 > The requires transitive keyword is used when specifying a module to be used by the requesting module and any other modules that use the .
+
 #### Duplicate requires Statements
 	- Java doesn't allow you to repeat the same module in a requires clause
 	
