@@ -129,41 +129,32 @@
 	abstract class or interface that inherits from two conflicting
 	abstract types
 	
-POLYMORPHISM AND INTERFACES
-	Abstract Reference Types
-	Casting Interfaces
-		Let�s say you have an abstract reference type variable, which
-		has been instantiated by a concrete subclass. If you need access
-		to a method that is only declared in the concrete subclass, then
-		you will need to cast the interface reference to that type,assuming the cast is supported at runtime
+## Polymorphism And Interfaces
+### Abstract Reference Types
+### Casting Interfaces
+	Let's say you have an abstract reference type variable, which has been instantiated by a concrete subclass. If you need access to a method that is only declared in the concrete subclass, then you will need to cast the interface reference to that type, assuming the cast is supported at runtime.
 		
-		- throws a ClassCastException at runtime if 2 object are not relate but implement the same interface
-		- The compiler does not allow a cast from an
-		interface reference to an object reference if the object type does
-		not implement the interface
+	- Throws a ClassCastException at runtime if 2 object are not relate but implement the same interface
+	- The compiler does not allow a cast from an interface reference to an object reference if the object type does not implement the interface
 		
-	Interfaces and the instanceof Operator
-		- The compiler will only report an unrelated type error for an
-			instanceof operation with an interface on the right side if the
-			reference on the left side is a final class that does not inherit
-			the interface.
+### Interfaces and the instanceof Operator
+	- The compiler will only report an unrelated type error for an
+	instanceof operation with an interface on the right side if the
+	reference on the left side is a final class that does not inherit
+	the interface.
 	
-	*compare to abstract class: include implicit modifiers, do not
-		contain constructors, do not participate in the instance
-		initialization process, and support multiple inheritance.
+	* Compare to abstract class: include implicit modifiers, do not contain constructors, do not participate in the instance initialization process, and support multiple inheritance.
 		
-	* inner or nested interfaces as inner classes
+	* Inner or nested interfaces as inner classes
 	
-Inner Classes
-	- member inner class
-	- it cannot be declared unless it is inside another class.
+## Inner Classes
+	- Member inner class
+	- It cannot be declared unless it is inside another class.
 	- 4 types:  member inner classes, local classes, anonymous classes, and static nested classes
 	- A member inner class can be declared with all of the same access modifiers as a class member
-	- static members are disallowed in member inner classes unless go with final(constant)
-	The advantage of using a member inner class in this example is
-	that the outer class completely manages the life cycle of the inner class
+	- Static members are disallowed(allowed from Java 17) in member inner classes unless go with final(constant).
+
+	The advantage of using a member inner class in this example is that the outer class completely manages the life cycle of the inner class
 	
 	**** InnerClass cannot have static members because it belongs to an instance (of OuterClass)
-	
-	 
 	and a static members means that this variable belongs to the entire class and not any particular instance.

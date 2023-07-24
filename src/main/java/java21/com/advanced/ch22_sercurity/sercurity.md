@@ -1,50 +1,51 @@
-Designing a Secure Object
-	LIMITING ACCESSIBILITY
+# SECURITY
+## Designing a Secure Object
+### Limiting Accessibility
 	- A key security principle is to limit access as much as possible
-	- principle of least privilege
+	- Principle of least privilege
 	- Use access control (Methods and Encapsulation)
-	- make private fields
+	- Make private fields
+		
+### Restricting Extensibility
+	- Final prevents any subclasses.
 	
-	RESTRICTING EXTENSIBILITY
-	- final prevents any subclasses.
-	
-	CREATING IMMUTABLE OBJECTS
+## Creating Immutable Objects
 	1. Mark the class as final.
 	2. Mark all the instance variables private
 	3. Don't define any setter methods and make fields final
 	4. Don't allow referenced mutable objects to be modified.
 	5. Use a constructor to set all properties of the object, making a copy if needed.
 	
-	- copy constructor/ defensive copy 
-	- return copy referenced object
-	- using delegate methods to read the data
+	- Copy constructor/ defensive copy 
+	- Return copy referenced object
+	- Using delegate methods to read the data
 	
 	
-	CLONING OBJECTS
-	- Cloneable interface with method c
-	shallow copy: 
-	- only the top‐level object references and primitives are copied
-	- No new objects from within the cloned object are created
+## Cloning Objects
+	- Cloneable interface with method clone
+	Shallow copy: 
+    	- Only the top‐level object references and primitives are copied
+    	- No new objects from within the cloned object are created
 	
-	deep copy:
-		override the clone() method to make a deep copy
+	Deep copy:
+		- Override the clone() method to make a deep copy
 		
 		
-Introducing Injection and Input Validation	
+## Introducing Injection and Input Validation	
 	- user input 
 	- reading from files
 	- retrieving data from a database
 	
-	PREVENTING INJECTION WITH A PREPAREDSTATEMENT
+### Preventing Injection With A Preparedstatement
 	- Statement : sql injection
 	- PreparedStatement + bind variables
-	 A PreparedStatement isn't magic.
-	 It gives you the capability to be safe, but only if you use it properly.
+	A PreparedStatement isn't magic.
+	It gives you the capability to be safe, but only if you use it properly.
 	 
 	 
-	 - SQL injection is often caused by a lack of properly sanitized user input
+	- SQL injection is often caused by a lack of properly sanitized user input
 	 
-	INVALIDATING INVALID INPUT WITH VALIDATION 
+### Invalidating Invalid Input With Validation 
 	- Command injection
 	- Use whitelist: that allows us to specify which values are allowed
 	
@@ -53,16 +54,15 @@ Introducing Injection and Input Validation
 	- log a message
 	- take any other action of your choosing
 	
-WHITELIST VS. BLACKLIST
-	- The problem with a blacklist is that you
-	have to be cleverer than the bad guys. There are a lot of ways to cause harm
+## WHITELIST VS. BLACKLIST
+	- The problem with a blacklist is that you have to be cleverer than the bad guys. There are a lot of ways to cause harm.
 	
 	-  Whitelisting is preferable to blacklisting for security because a whitelist doesn't need to foresee every possible problem.
 	Security decisions are often about trading convenience for lower risk.	
 
-Working with Confidential Information
-	GUARDING SENSITIVE DATA FROM OUTPUT	
-	-  to avoid putting confidential information in a toString() method
+## Working with Confidential Information
+### Guarding Sensitive Data From Output
+	-  To avoid putting confidential information in a toString() method
 	Such sensitive contexts include the following:
 	- Writing to a log file
 	- Printing an exception or stack trace
@@ -71,90 +71,72 @@ Working with Confidential Information
 	
 	* It is important to make sure it is being shared only per the requirements.
 	
-	PROTECTING DATA IN MEMORY
-	- If her application crashes, it may generate a dump file. That
-	contains values of everything in memory.
+### Protecting Data In Memory
+	- If her application crashes, it may generate a dump file. That contains values of everything in memory.
+	- When calling the readPassword() on Console, it returns a char[] instead of a String. This is safer for two reasons.
+    	+  It is not stored as a String, so Java won't place it in the String pool, where it could exist in memory long after the code that used it is run.
+    	- You can null out the value of the array element rather than waiting for the garbage collector to do it.
+
+	* The idea is to have confidential data in memory for as short a time as possible
 	
-	- When calling the readPassword() on Console, it returns a char[]
-	instead of a String. This is safer for two reasons.
-	- It is not stored as a String, so Java won't place it in the String
-	pool, where it could exist in memory long after the code that
-	used it is run.
-	- You can null out the value of the array element rather than
-	waiting for the garbage collector to do it.
-	
-	The idea is to have confidential data in memory for as short a time as possible
-	
-LIMITING FILE ACCESS
-	 use a security policy to control what the program can access(read/write)
-	 defense in depth
+### Limiting File Access
+	- Use a security policy to control what the program can access(read/write) defense in depth
 	 
-Serializing and Deserializing Objects
+## Serializing and Deserializing Objects
 	- Java skips calling the constructor when deserializing an object	
 	
-	SPECIFYING WHICH FIELDS TO SERIALIZE
-	- transient to prevent field being serialized
-	- specify fields to be serialized in an array.	
+### Specifying Which Fields To Serialize
+	- Transient to prevent field being serialized
+	- Specify fields to be serialized in an array.	
 	
-	If you go with the array approach, make sure you
-	remember to use the private, static, and final modifiers.
+	* If you go with the array approach, make sure you remember to use the private, static, and final modifiers. 
 	Otherwise, the field will be ignored.
 	
-CUSTOMIZING THE SERIALIZATION PROCESS
+### Customizing The Serialization Process
 	- writeObject()
 	- readObject()
 	
-WORKING WITH PASSWORDS
+### Working With Passwords
 	- salt (initial random value) and one‐way hashing algorithm	
 	
-PRE/POST‐SERIALIZATION PROCESSING
-	readResolve() : replacing the reference of the object returned by deserialization -> run after readObject()	
-	writeReplace() : allows us to replace the object that gets serialized -> run before writeObject()
+### Pre/Post‐Serialization Processing
+	- readResolve(): Replacing the reference of the object returned by deserialization -> run after readObject()	
+	- writeReplace(): Allows us to replace the object that gets serialized -> run before writeObject()
 	
-Constructing Sensitive Objects
-	When constructing sensitive objects, you need to ensure that
-	subclasses can't change the behavior.	
+## Constructing Sensitive Objects
+	- When constructing sensitive objects, you need to ensure that subclasses can't change the behavior.	
+	- Making Methods Final For Sensitive Method
+	In general, you should avoid allowing your constructors to call any methods that a subclass can provide its own implementation for.
 	
-	MAKING METHODS FINAL for sensitive method
-		In general, you should avoid allowing your
-		constructors to call any methods that a subclass can provide its own implementation for.
-	
-	MAKING CLASSES FINAL ->  can't create a malicious subclass to begin
-	MAKING THE CONSTRUCTOR PRIVATE 
+	- Making Classes Final ->  can't create a malicious subclass to begin
+	- Making The Constructor Private
 	
 	
-HOW TO PROTECT THE SOURCE CODE
-	can decompile your code and get source code	
-	security by obscurity
+## How To Protect The Source Code
+	- Can decompile your code and get source code security by obscurity.
 	
-Preventing Denial of Service Attacks
+## Preventing Denial of Service Attacks
 	DoS -> denial of service
 	DDoS	
 	
-	LEAKING RESOURCES fix -> close rc after using
-	READING VERY LARGE RESOURCES -> check size before process
+	LEAKING RESOURCES fix 			-> close rc after using
+	READING VERY LARGE RESOURCES 	-> check size before process
 	INCLUDING POTENTIALLY LARGE RESOURCES
-		inclusion attack
-		- Any file that you didn't create is suspect
-		"zip bomb" -> where the file is heavily compressed on disk.
-		“billion laughs attack”(XML bomb) in the Extensible Markup Language (XML)
-		-> the file gets expanded exponentially
+	- Inclusion attack: Any file that you didn't create is suspect
+		+ "zip bomb" -> where the file is heavily compressed on disk.
+		+ “billion laughs attack”(XML bomb) in the Extensible Markup Language (XML) -> the file gets expanded exponentially
 		
-		-  includes a script on another website (risk)
+	- Includes a script on another website (risk)
 		
-OVERFLOWING NUMBERS
-WASTING DATA STRUCTURES
-	- He creates a class where
-	hashCode() always returns 42 and puts a million of them in
+## Overflowing Numbers
+## Wasting Data Structures
+	- He creates a class where hashCode() always returns 42 and puts a million of them in
 	your map.	
+	- Beware of code that attempts to create a very large array or other data structure		
 	
-	- beware of code that attempts to create a very large
-	array or other data structure		
-	
-LEARNING MORE
-	Open Web Application Security Project (OWASP) -> publishes a top 10 list of security issue
+## Learning More
+	Open Web Application Security Project (OWASP):  Publishes a top 10 list of security issue
 	The Cloud Security Alliance (CSA) 
-	
-	please read
+	Please read
 	Iron‐Clad Java, Jim Manico and August Detlefsen
 	(Oracle Press, 2014)
