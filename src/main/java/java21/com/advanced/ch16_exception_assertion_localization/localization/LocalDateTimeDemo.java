@@ -27,7 +27,7 @@ public class LocalDateTimeDemo
         LocalTime time = LocalTime.of(11, 12, 34);
         LocalDateTime dt = LocalDateTime.of(date, time);
         var f = DateTimeFormatter.ofPattern("MMMM dd, yyyy 'at' hh:mm");
-        System.out.println(dt.format(f)); // October 20, 2020 at11:12
+        System.out.println(dt.format(f)); // October 20, 2020 at 11:12
     }
 }
 

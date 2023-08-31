@@ -1,9 +1,7 @@
 # GENERIC
 ## Working with Generics
-	- formal type parameter
-    - parameterized type
-    - type parameter
-    - type argument
+    - type parameter  -> formal type parameter
+    - type argument   ->  parameterized type parameter
     - type inference
 
 ## Generic Classes	

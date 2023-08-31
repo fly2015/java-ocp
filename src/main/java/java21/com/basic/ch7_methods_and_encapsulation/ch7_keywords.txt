@@ -30,7 +30,7 @@ OPTIONAL EXCEPTION LIST
 	
 Working with Varargs
 
-	- A varargs parameter must be the last element in a method’s parameter list.
+	- A varargs parameter must be the last element in a methodï¿½s parameter list.
 		-> 	you are allowed to have only one varargs parameter per method
 	- pass in an array or list the elements of the array and let Java create it
 	- can even omit the varargs values in the method call and Java will create an array of length zero
@@ -43,8 +43,8 @@ PRIVATE ACCESS/DEFAULT/PROTECTED/PUBLIC
 
 Applying the static Keyword
 	variable, method, class, import
-	-  static methods don’t require an instance of the class
-		-> utility or helper methods that don’t require any object state
+	-  static methods don't require an instance of the class
+		-> utility or helper methods that don't require any object state
 		-> for state that is shared by all instances of a class
 		
 ACCESSING A STATIC VARIABLE OR METHOD	
@@ -64,11 +64,11 @@ DOES EACH INSTANCE HAVE ITS OWN COPY OF THE CODE?
 	- each call of an instance method (or any method) gets space on the stack for method parameters and local variables
 	The same thing happens for static methods
 	
-	*** only data gets its “own copy.” There is no need to duplicate copies of the code itself.
+	*** only data gets its own copy. There is no need to duplicate copies of the code itself.
 	
 STATIC INITIALIZATION	
 	All static initializers run when the class is first used in the order they are defined..
-	final variables aren’t allowed to be reassigned
+	final variables arent allowed to be reassigned
 
 TRY TO AVOID STATIC AND INSTANCE INITIALIZERS
 	Use when when you need to initialize a static field and the code to do so requires more than one line
@@ -76,8 +76,8 @@ TRY TO AVOID STATIC AND INSTANCE INITIALIZERS
 STATIC IMPORTS
 
 Passing Data among Methods
-	- Java is a “pass-by-value” language
-	- Assigning a new primitive or reference to a parameter doesn’t change the caller.
+	- Java is a pass-by-value language
+	- Assigning a new primitive or reference to a parameter doesn't change the caller.
 	- Calling methods on a reference to an object can affect the caller.
 
 Overloading Methods

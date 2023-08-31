@@ -35,6 +35,8 @@ public class DateTimeFormatterDemo
         System.out.println(DateTimeFormatter.ofLocalizedDate(FormatStyle.LONG).format(now));// June 29, 2023
         System.out.println(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM).format(now));// Jun 29, 2023
         System.out.println(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT).format(now));// 6/29/23
+        
+        System.out.println(DateTimeFormatter.ofPattern("M.hhmmss").format(now));// 
     }
 }
 

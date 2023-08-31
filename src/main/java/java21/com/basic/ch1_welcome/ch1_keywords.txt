@@ -18,14 +18,14 @@ the method signature (method name and parameter types)
 /* a multiline comment */
 /** a javadoc comment */
 
-comments aren’t executable code
+comments aren't executable code
 
 two classes in the same file. -> only one class is allowed public
 Each file can contain only one public class.
 The filename must match the class name, including case, and have a .java extension
 
 access modifier
-If a main() method isn’t present in the class we name with the .java executable,
+If a main() method isn't present in the class we name with the .java executable,
 the process will throw an error and terminate
 
 All command-line arguments are treated as String objects
@@ -53,7 +53,7 @@ compile
 Ordering Elements in a Class
 	Package -> import -> class -> field -> method
 
-extra whitespace doesn’t matter in Java syntax
+extra whitespace doesn't matter in Java syntax
 
 Identify benefits of Java
 	object oriented

@@ -31,9 +31,9 @@ Writing Literals
 	floating-point literals are assumed to be double
 
 	decimal number system
-	Octal (digits 0–7), which uses the number 0 as a prefix—for example, 017
-	Hexadecimal (digits 0–9 and letters A–F/a–f), which uses 0x or 0X as a prefix—for example, 0xFF, 0xff, 0XFf.(case insensitive)
-	Binary (digits 0–1), which uses the number 0 followed by b or B as a prefix—for example, 0b10, 0B10
+	Octal (digits 0-7), which uses the number 0 as a prefix for example, 017
+	Hexadecimal (digits 0-9 and letters A-F/a-f), which uses 0x or 0X as a prefix for example, 0xFF, 0xff, 0XFf.(case insensitive)
+	Binary (digits 0-1), which uses the number 0 followed by b or B as a prefix for example, 0b10, 0B10
 
 Literals and the Underscore Character
 	add underscores anywhere except at the beginning of a literal, the end of a literal, right before a decimal point, or right after a decimal point
@@ -47,7 +47,7 @@ IDENTIFYING IDENTIFIERS
 	Since Java 9, a single underscore _ is not allowed
 	not same Java reserved word (native, strictfp, goto, const)
 	
-	const and goto aren’t actually used in Java
+	const and goto aren't actually used in Java
 	true/false/null are not actually reserved words, but literal values -> they cannot be used
 	
 	Java supports the Unicode character set, so there are thousands of characters that can start a legal Java identifier
@@ -105,14 +105,14 @@ SCOPE
 	Class variables: In scope from declaration until program ends
 	
 Destroying Objects
-	All Java objects are stored in your program memory’s heap.	
+	All Java objects are stored in your program memoryï¿½s heap.	
 
 GARBAGE COLLECTION
 	Garbage collection refers to the process of automatically
 	freeing memory on the heap by deleting objects that are no
 	longer reachable in your program
 	
-	eligible for garbage collection refers to an object’s state of no longer being accessible
+	eligible for garbage collection refers to an objectï¿½s state of no longer being accessible
 	
 	Calling System.gc()  is not guaranteed to run or do anything
 	It merely suggests that the JVM kick off garbage collection
