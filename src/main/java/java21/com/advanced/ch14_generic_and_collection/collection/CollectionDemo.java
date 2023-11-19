@@ -1,8 +1,8 @@
 /*
  * CollectionDemo.java
  *
- * Copyright by CRIF AG
- * Zürich
+ * Copyright by Hien Ng
+ * Da Nang, Viet Nam
  * All rights reserved.
  */
 package java21.com.advanced.ch14_generic_and_collection.collection;
