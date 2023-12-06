@@ -28,9 +28,7 @@ public class Test4Collection
         map.merge(3, 3, (a,b) -> null);
         map.merge(4, 3, (a,b) -> null);
         System.out.println(map);
-        
-        
-        
+
         List.of();
     }
 }

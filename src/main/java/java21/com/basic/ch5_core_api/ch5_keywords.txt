@@ -15,12 +15,12 @@ CONCATENATION
 		* Use numeric addition if two numbers are involved
 
 IMMUTABILITY
-	an object that can’t be changed its state once it’s created
-	There’s no way to change the value of the state once it’s set
+	an object that can't be changed its state once it's created
+	There's no way to change the value of the state once it's set
 	
 	* make the instance variable FINAL so the compiler reminds you if you accidentally change.
 	* immutable classes in Java are final, which prevents subclasses creation
-	-> You wouldn’t want a subclass adding mutable behavior.
+	-> You wouldn't want a subclass adding mutable behavior.
 	
 	- concat() will return a new String
 	
@@ -33,7 +33,7 @@ IMPORTANT STRING METHODS
 	- indexOf(int ch, int fromIndex)
 	- indexOf(String str)
 	- indexOf(String str, int fromIndex)
-	  * returns –1 when no match 	
+	  * returns '1 when no match 	
 	  
 	 substring() 
 	 substring(int beginIndex, int endIndex) -> exclude endIndex
@@ -43,7 +43,7 @@ IMPORTANT STRING METHODS
 	 toUpperCase()
 	 
 	 equals(Object obj)
-	 equalsIgnoreCase(String str) -> convert the characters’ case if needed
+	 equalsIgnoreCase(String str) -> convert the characters' case if needed
 	 	- check two String objects contain exactly the same characters in the same order.
 	 
 	 boolean startsWith(String prefix)
@@ -55,7 +55,7 @@ IMPORTANT STRING METHODS
 	 	* does a simple search and replace on the string
 	 	
 	 boolean contains(CharSequence charSeq)
-	 	The contains() method is a convenience method so you don’t have to write str.indexOf(otherString) != -1.
+	 	The contains() method is a convenience method so you don't have to write str.indexOf(otherString) != -1.
 	 	
 	trim()	
 	 	removing blank space from the beginning and/or end of a String
@@ -97,7 +97,7 @@ Using the StringBuilder Class
 		
 	StringBuilder did not implement equals(). If you call equals() on two StringBuilder instances, it will check reference equality.
 
-* If a class doesn’t have an equals method, Java determines whether the references point to the same object
+* If a class doesn't have an equals method, Java determines whether the references point to the same object
 
 THE STRING POOL(intern pool)
 	location in the Java virtual machine (JVM) that collects all these strings		 
@@ -115,10 +115,10 @@ Understanding Java Arrays
 	
 	create: type, size, arr symbol
 	int[] nums = new int[3] ->all elements are set to the default value for that type.
-	anonymous array -> you don’t specify the type and size.
+	anonymous array -> you don't specify the type and size.
 	
 	can type the [] before or after the name
-	MULTIPLE “ARRAYS” IN DECLARATIONS -> bracket must be right after type.
+	MULTIPLE 'ARRAYS' IN DECLARATIONS -> bracket must be right after type.
 	-> DeclareArrayStyle.java
 	
 	toString(): [Ljava.lang .String;@160bc7c0 -> L mean arrays, String is the ref type, 160bc7c0 is the hashcode
@@ -186,7 +186,7 @@ USING AN ARRAYLIST
 	boolean add(E element)
 	void add(int index, E element)
 	boolean remove(Object object)
-	E remove(int index)  index that doesn’t exist will throw an exception.
+	E remove(int index)  index that doesn't exist will throw an exception.
 	E set(int index, E newElement) IndexOutOfBoundsException
 	isEmpty() and size()
 	clear()
@@ -194,7 +194,7 @@ USING AN ARRAYLIST
 	equals() -> same element in same ordered
 	
 WRAPPER CLASSES
-	 has a constructor(isn’t recommended for new code)/use valueOf() instead of, it allows object caching.
+	 has a constructor(isn't recommended for new code)/use valueOf() instead of, it allows object caching.
 	 wrapper classes are immutable and take advantage of some CACHING as well
 	 XValue() -> revert (un-boxing)./parseValue -> NumberFormatException
 	 Charactor has no method for boxing and unboxing.
@@ -212,7 +212,7 @@ CONVERTING BETWEEN ARRAY AND LIST
 	- an immutable copy of the original array	 
 		-> ImutableList.java
 		
-	- If you will need to later add or remove elements, you’ll still need to create an ArrayList using the constructor
+	- If you will need to later add or remove elements, you'll still need to create an ArrayList using the constructor
 	ArrayAndListConversions.java -> none of the options allows you to change the number of elements.
 	
 SORTING
@@ -220,7 +220,7 @@ SORTING
 	
 
 SET
-	a Set isn’t ordered
+	a Set isn't ordered
 	cannot call set(index,value) or remove(index)
 	* could not identify the index cos the way the set store values, 
 	    not store index/element pair -> it store using buket/slot by using hashing algorithm

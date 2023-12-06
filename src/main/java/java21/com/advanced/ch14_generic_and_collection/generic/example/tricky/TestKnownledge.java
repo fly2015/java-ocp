@@ -38,7 +38,7 @@ public class TestKnownledge {
         //inList6.add(new X()); can not
         //List<? super Shape> inList7 = new ArrayList<Circle>(); //ERROR.
         List<? super Shape> inList7 = new ArrayList<Meta>();
-        //List<? super Shape> inList8 = new ArrayList<X>(); X is supertype of Shape even both X and shape are chilren of Meta
+        //List<? super Shape> inList8 = new ArrayList<X>(); X is not a supertype of Shape even both X and shape are chilren of Meta
         
         //-----------------------------------------------------------
         Circle circle = new Circle();

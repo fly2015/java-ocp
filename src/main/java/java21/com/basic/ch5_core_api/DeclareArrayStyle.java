@@ -30,6 +30,9 @@ public class DeclareArrayStyle
         int[] ids, types; // 2 arrays
         
         int id1s[], type2s; // one array, one int
+        
+        String strs1 [] = {};
+        String strs2 [] = new String[] {};
     }
 }
 

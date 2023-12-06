@@ -1,0 +1,1 @@
+java -p ./mods/jars -m course.enrollment/java21.com.assigments.tricks.modules.course.enrollment.Student

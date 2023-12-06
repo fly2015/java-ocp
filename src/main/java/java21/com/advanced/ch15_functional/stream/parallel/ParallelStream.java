@@ -33,7 +33,7 @@ public class ParallelStream
         .collect(Collectors.toList())
         .stream()
         
-        //StreamSupport.stream(Spliterators.spliterator(list.iterator(), 1024, Spliterator.IMMUTABLE), true)
+        //StreamSupport.stream(Spliterators.spliterator(list.iterator(), 1024, SpliteratorInteraction.IMMUTABLE), true)
         //actualList.stream()
         .parallel()
         //.peek(o -> System.out.println(o))

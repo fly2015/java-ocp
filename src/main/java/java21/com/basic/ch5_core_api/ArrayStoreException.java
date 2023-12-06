@@ -23,7 +23,7 @@ public class ArrayStoreException
         Object[] objects = strings;
         String[] againStrings = (String[])objects;
         // againStrings[0] = new StringBuilder(); // DOES NOT COMPILE
-        objects[0] = new StringBuilder();
+        objects[0] = new StringBuilder();//Exception
         
         System.out.println(strings);
     }
