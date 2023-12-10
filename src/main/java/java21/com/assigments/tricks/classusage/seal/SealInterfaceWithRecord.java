@@ -26,7 +26,6 @@ sealed interface Level8
 {
 
 }
-
 /*
  * Changes:
  * $Log: $

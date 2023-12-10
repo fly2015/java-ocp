@@ -32,6 +32,8 @@ class Outer
     {
         Inner inner = new Outer().new Inner();
         System.out.println(inner.name);
+        Outer outer = new Outer();
+        System.out.println(outer.name);
     }
 }
 

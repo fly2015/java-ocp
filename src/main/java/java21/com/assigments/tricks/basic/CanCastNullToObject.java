@@ -19,7 +19,7 @@ public class CanCastNullToObject
     {
         Object ojb = (Object)null;
         System.out.println(ojb);//null
-        System.out.println(ojb);//NullPointerException
+        System.out.println(ojb.toString());//NullPointerException
     }
 }
 

@@ -19,7 +19,7 @@ public class MathDemo
     {
         
         // ceil -> douple
-        System.out.println(Math.ceil(65));
+        System.out.println(Math.ceill(65));
         System.out.println(Math.ceil(0));
         System.out.println(Math.ceil(-1));
         System.out.println(Math.ceil(65.11));
@@ -34,6 +34,13 @@ public class MathDemo
         
         //pow -> double
         System.out.println(Math.pow(2, 3));
+        
+        //floor
+        System.out.println(Math.floor(65.9));
+        System.out.println(Math.floor(-65.9));//-66.0
+        
+        //round
+        System.out.println(Math.round(-65.9));
     }
 }
 

@@ -1,5 +1,5 @@
 
-[-cp/--class-path/-class-path]
+[-cp/--class-path/-classpath]
 
 #compile
 	javac -cp <class-paths> -d <output-directory> <source-directory and files>

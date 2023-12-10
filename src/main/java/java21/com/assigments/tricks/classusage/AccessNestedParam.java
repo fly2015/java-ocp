@@ -7,6 +7,8 @@
  */
 package java21.com.assigments.tricks.classusage;
 
+import java21.com.assigments.tricks.classusage.Level4.Level5.Level6;
+
 /**
  * 
  *
@@ -17,7 +19,8 @@ public class AccessNestedParam
 {
     public static void main(String[] args)
     {
-        Level4 level4 = new Level4();
+        Level4.Level5.Level6 level6 = new Level4().new Level5().new Level6();
+        level6.printName();
     }
 }
 
@@ -30,6 +33,15 @@ class Level4
         class Level6
         {
             private String name ="Level6";
+            
+            void printName()
+            {
+                System.out.println(name);//Level6
+                System.out.println(this.name);//Level6
+                System.out.println(Level6.this.name);//Level6
+                System.out.println(Level5.this.name);//Level5
+                System.out.println(Level4.this.name);//Level4
+            }
         }
     }
     

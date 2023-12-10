@@ -24,10 +24,10 @@ public class Test4Collection
         map.put(1, 10);
         map.put(2, 20);
         map.put(3, null);
-        map.merge(1, 3, (a,b) -> a + b);
-        map.merge(3, 3, (a,b) -> null);
-        map.merge(4, 3, (a,b) -> null);
-        System.out.println(map);
+        map.merge(1, 3, (a,b) -> a + b); //1-13
+        map.merge(3, 3, (a,b) -> null);// 3-null
+        map.merge(4, 3, (a,b) -> null);//4-3
+        System.out.println(map);//{1=13, 2=20, 3=3, 4=3}
 
         List.of();
     }

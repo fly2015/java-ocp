@@ -1,0 +1,11 @@
+Review module command
+Review concurrent & synchronized collection
+Review the usage
+Review the tricks
+Do the chapter review assignment.
+Do the  final assignment test.
+
+
+sequential()
+long can be implicitly cast to double
+conn.setAutoCommit(false)

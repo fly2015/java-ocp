@@ -1,5 +1,5 @@
 /*
- * SameDeclaredParamOnSuperAnSub.java
+ * SameDeclaredParamOnSuperAnSubBaseOnTheReferenceType.java
  *
  * Copyright by Hien Ng
  * Da Nang, Viet Nam
@@ -13,7 +13,7 @@ package java21.com.assigments.tricks.classusage;
  * @author nhqhien
  * @version $Revision:  $
  */
-public class SameDeclaredParamOnSuperAnSub
+public class SameDeclaredParamOnSuperAnSubBaseOnTheReferenceType
 {
     public static void main(String[] args)
     {

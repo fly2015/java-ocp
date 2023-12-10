@@ -40,6 +40,7 @@ public class GenericManipulateDataType
         lowerBoundExceptions.add(new RuntimeException());
         lowerBoundExceptions.add(new IOException());
         lowerBoundExceptions.add(new Exception());
+        Object exception2 = lowerBoundExceptions.get(0);
     }
 }
 

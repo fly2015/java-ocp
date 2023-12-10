@@ -29,6 +29,13 @@ public class ProtectedAccessTrickiest extends ClassWithProtectedMethod
         getName();//OK
         //classWithProtectedMethod.getName(); => Trickiest, can not access from there.
     }
+    
+    protected void getName()
+    {
+        System.out.println("ClassWithProtectedMethod Overriden");
+    }
+    
+    
 }
 
 

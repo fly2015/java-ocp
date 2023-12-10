@@ -20,7 +20,7 @@ public class FinallyClosingResources
 {
     //automatic resource management - try with resources
     /*
-     * Behind the scenes, the compiler replaces a try-withresources block with a try and finally block.
+     * Behind the scenes, the compiler replaces a try-with resources block with a try and finally block.
      *  We refer to this “hidden” finally block as an implicit finally block
         since it is created and used by the compiler automatically.
         You can still create a programmer-defined finally block

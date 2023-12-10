@@ -24,7 +24,7 @@ public class RelativePathMustBeTheSameType
         Path path3 = Path.of("/c");
         
         System.out.println(path1.relativize(path2));// ../b
-        System.out.println(path1.relativize(path3));// EXCEPTION => ifferent type of Path
+        System.out.println(path1.relativize(path3));// EXCEPTION => different type of Path
     }
 }
 

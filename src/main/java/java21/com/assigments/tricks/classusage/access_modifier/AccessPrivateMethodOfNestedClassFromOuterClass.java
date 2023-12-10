@@ -13,7 +13,7 @@ package java21.com.assigments.tricks.classusage.access_modifier;
  * @author nhqhien
  * @version $Revision:  $
  */
-public class AccessPrivateMethodOfNestedClass
+public class AccessPrivateMethodOfNestedClassFromOuterClass
 {
 
     enum Food
@@ -33,7 +33,7 @@ public class AccessPrivateMethodOfNestedClass
 
     public static void main(String[] seasons)
     {
-        System.out.print(switch (new AccessPrivateMethodOfNestedClass().new Diet().getFavorite())
+        System.out.print(switch (new AccessPrivateMethodOfNestedClassFromOuterClass().new Diet().getFavorite())
         {
             case APPLES -> "a";
             case BERRIES -> "b";
@@ -58,7 +58,7 @@ class Test
     public static void main(String[] args)
     {
         /*
-         * System.out.print(switch (new AccessPrivateMethodOfNestedClass().new Diet().getFavorite())
+         * System.out.print(switch (new AccessPrivateMethodOfNestedClassFromOuterClass().new Diet().getFavorite())
          * {
          * case APPLES -> "a";
          * case BERRIES -> "b";

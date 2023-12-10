@@ -18,13 +18,14 @@ public class LamdasDeclareVariableTrick
 {
     public static void main(String[] a)
     {
-        /*
-         * int b = 1;
-         * Predicate<Integer> p1 = a -> {
-         * int b = 0;
-         * int c = 0;
-         * return b == c;
-         * };
+        
+          int b = 1;
+          /*
+              Predicate<Integer> p1 = a -> {
+              int b = 0;
+              int c = 0;
+              return b == c;
+          };
          */
     }
 }

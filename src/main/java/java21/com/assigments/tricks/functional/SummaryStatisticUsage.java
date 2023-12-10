@@ -8,6 +8,8 @@
 package java21.com.assigments.tricks.functional;
 
 import java.util.IntSummaryStatistics;
+import java.util.OptionalDouble;
+import java.util.OptionalInt;
 import java.util.stream.IntStream;
 
 /**
@@ -22,6 +24,9 @@ public class SummaryStatisticUsage
     {
         IntSummaryStatistics summaryStatistics = IntStream.of(1, 2, 3).summaryStatistics();
         System.out.println(summaryStatistics);
+        
+        OptionalDouble average = IntStream.of(1, 2, 3).average();
+        OptionalInt max = IntStream.of(1, 2, 3).max();
     }
 }
 
