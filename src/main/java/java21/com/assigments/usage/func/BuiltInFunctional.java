@@ -5,7 +5,7 @@
  * Da Nang, Viet Nam
  * All rights reserved.
  */
-package java21.com.assigments.usage.functional;
+package java21.com.assigments.usage.func;
 
 import java.util.function.IntBinaryOperator;
 import java.util.function.IntConsumer;

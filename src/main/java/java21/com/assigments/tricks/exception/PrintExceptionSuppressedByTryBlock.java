@@ -5,7 +5,7 @@
  * Da Nang
  * All rights reserved.
  */
-package java21.com.advanced.ch16_exception_assertion_localization.excpetion;
+package java21.com.assigments.tricks.exception;
 
 
 /**
@@ -14,7 +14,7 @@ package java21.com.advanced.ch16_exception_assertion_localization.excpetion;
  * @author nhqhien
  * @version $Revision:  $
  */
-public class TryWithResourceDemoTrick3
+public class PrintExceptionSuppressedByTryBlock
 {
     public static void main(String[] args) 
     {

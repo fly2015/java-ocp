@@ -25,11 +25,11 @@ public class DateTimeFormatterUsage
     public static void main(String[] args)
     {
         LocalDateTime localDateTime = LocalDateTime.of(LocalDate.of(2023, 11, 20), LocalTime.of(20, 20, 30));
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss S a");
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss SS a");
         System.out.println(localDateTime.format(dateTimeFormatter));
         
         ZonedDateTime zonedDateTime = ZonedDateTime.of(LocalDate.of(2023, 11, 20), LocalTime.of(20, 20, 30), ZoneId.systemDefault());
-        DateTimeFormatter dateTimeFormatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss S a z");
+        DateTimeFormatter dateTimeFormatter2 = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm:ss SS a z");
         System.out.println(dateTimeFormatter2.format(zonedDateTime));
     }
 }

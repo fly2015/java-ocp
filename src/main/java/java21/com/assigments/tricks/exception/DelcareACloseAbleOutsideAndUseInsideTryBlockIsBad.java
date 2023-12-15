@@ -5,7 +5,7 @@
  * Da Nang
  * All rights reserved.
  */
-package java21.com.advanced.ch16_exception_assertion_localization.excpetion;
+package java21.com.assigments.tricks.exception;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -17,7 +17,7 @@ import java.nio.file.Path;
  * @author nhqhien
  * @version $Revision:  $
  */
-public class TryWithResourceDemoTrick
+public class DelcareACloseAbleOutsideAndUseInsideTryBlockIsBad
 {
     static Path path;
     public static void main(String[] args) throws IOException

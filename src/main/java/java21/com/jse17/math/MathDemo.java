@@ -19,7 +19,7 @@ public class MathDemo
     {
         
         // ceil -> douple
-        System.out.println(Math.ceill(65));
+        System.out.println(Math.ceil(65));
         System.out.println(Math.ceil(0));
         System.out.println(Math.ceil(-1));
         System.out.println(Math.ceil(65.11));
