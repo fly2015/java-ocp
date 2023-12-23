@@ -59,7 +59,9 @@ public class PracticalUsage
         
 
         System.out.println(Path.of("/a/./b..").normalize());
-
+        //Files.isSameFile(targetPath, targetPath);
+        //move();
+        //copy();
     }
 
 

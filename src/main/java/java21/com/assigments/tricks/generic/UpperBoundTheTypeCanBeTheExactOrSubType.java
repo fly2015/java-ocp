@@ -23,6 +23,8 @@ public class UpperBoundTheTypeCanBeTheExactOrSubType
     {
         List<? extends Exception> exceptionList1 = new ArrayList<Exception>();
         List<? extends Exception> exceptionList2 = new ArrayList<IOException>();
+        exceptionList2.add(null);//Upper bound only can add null
+        final Exception exception = exceptionList2.get(0);
         List<? extends RuntimeException> exceptionList3 = new ArrayList<IllegalArgumentException>();
     }
 }

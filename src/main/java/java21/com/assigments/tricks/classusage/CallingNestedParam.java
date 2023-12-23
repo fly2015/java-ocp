@@ -38,6 +38,7 @@ class Level1
             {
                 System.out.println(name);
                 System.out.println(this.name);
+                System.out.println(Level3.this.name);
                 System.out.println(Level2.this.name);
                 System.out.println(Level1.this.name);
             }

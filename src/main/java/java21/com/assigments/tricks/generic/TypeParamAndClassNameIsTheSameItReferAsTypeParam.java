@@ -24,6 +24,7 @@ public class TypeParamAndClassNameIsTheSameItReferAsTypeParam
 
 class X<X>
 {
+    //X x1 =new X();
     private X x; //
     public X(X x)
     {

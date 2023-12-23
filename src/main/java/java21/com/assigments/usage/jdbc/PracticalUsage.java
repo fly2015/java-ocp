@@ -159,6 +159,7 @@ public class PracticalUsage
         {
             cstm.registerOutParameter(1, Types.DOUBLE);
             cstm.setInt(1, 10);
+            //cstm.setString("", 10);//Can set IN with parameter name
             final boolean rs = cstm.execute();
             System.out.println(cstm.getDouble(1));
         }
@@ -178,6 +179,8 @@ public class PracticalUsage
         {
             cstm.setString(1, "e");
             final ResultSet rs = cstm.executeQuery();
+            //rs.absolute(0);
+            //rs.relative(1);
             while (rs.next())
             {
                 System.out.println(rs.getInt(1) + " - " + rs.getString(3));

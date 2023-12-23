@@ -33,6 +33,7 @@ public class ConsoleUsage
             final char[] readPassword = console.readPassword("*******", new char[10]);
             
             final Reader reader = console.reader();//support a reader
+            console.writer();//support a writter
         }
         else
         {

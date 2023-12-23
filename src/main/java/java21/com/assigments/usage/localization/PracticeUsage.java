@@ -23,6 +23,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 import java.time.temporal.ChronoUnit;
 import java.util.Locale;
+import java.util.Locale.Category;
 import java.util.ResourceBundle;
 import java.util.logging.Logger;
 
@@ -71,6 +72,10 @@ public class PracticeUsage
         System.out.println(LocalDate.now().format(ofLocalizedDate));
         System.out.println(ofLocalizedDate.format(LocalDate.now()));
         System.out.println(ofLocalizedDate.withLocale(new Locale("en")).format(LocalDate.now()));
+        
+        
+        
+        Locale.setDefault(Category.DISPLAY, new Locale.Builder().setRegion("us").build());
     }
 }
 

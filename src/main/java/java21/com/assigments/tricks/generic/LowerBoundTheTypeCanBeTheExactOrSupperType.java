@@ -24,8 +24,12 @@ public class LowerBoundTheTypeCanBeTheExactOrSupperType
         List<? super Exception> exceptionList1 = new ArrayList<Exception>();
         List<? super Exception> exceptionList2 = new ArrayList<Throwable>();
         List<? super RuntimeException> exceptionList3 = new ArrayList<Exception>();
+        
+        final Object runtimeException = exceptionList3.get(0);
+        
         exceptionList3.add(new IllegalArgumentException());
         exceptionList3.add(new RuntimeException());
+        exceptionList3.add(null);
     }
 }
 

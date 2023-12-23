@@ -18,12 +18,12 @@ public class PrintExceptionSuppressedByTryBlock
 {
     public static void main(String[] args) 
     {
-       try(A a = new A())
+       try(A a = new A(); A a1 = new A())
        {
-           
+          throw new RuntimeException("Throw this");
        }
        catch (Exception e) {
-           System.out.println(e.getMessage());
+           System.out.println(e.getMessage() + " " + e.getSuppressed().length);
        }
     }
     

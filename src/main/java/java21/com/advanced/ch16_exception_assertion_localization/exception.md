@@ -1,4 +1,4 @@
-## EXCEPTION
+ArithmeticException## EXCEPTION
 ### Exception
 	- Checked/unchecked
 	- Swallowing an exception -> when handle exception with an empty catch-block

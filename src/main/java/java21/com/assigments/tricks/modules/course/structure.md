@@ -14,3 +14,5 @@ api consumer
 	+ requires [api-service-interface-MODULE]
 	+ requires [api-service-locator-MODULE]
 	
+	
+Open module

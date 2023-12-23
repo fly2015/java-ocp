@@ -8,6 +8,9 @@
 package java21.com.assigments.tricks.functional;
 
 import java.util.Comparator;
+import java.util.stream.Collectors;
+import java.util.stream.DoubleStream;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -25,7 +28,6 @@ public class SortingStreamWithReverseOrderWithoutComparator
         Stream<String> sorted1 = Stream.of("1", "2", "3", "4", "5").sorted(Comparator.reverseOrder());
         
        // sorted1.filter(n -> n.startsWith("t")).sorted(Comparator::reverseOrder).findFirst().ifPresent(System.out::println);// COMPILCATION ERROR
-        
     }
 }
 

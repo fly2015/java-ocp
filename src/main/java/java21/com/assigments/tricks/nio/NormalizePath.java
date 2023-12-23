@@ -19,8 +19,8 @@ public class NormalizePath
 {
     public static void main(String[] args)
     {
-       Path path1 = Path.of("/a../b/./c");
-       System.out.println(path1.normalize());// \a..\b\c => Just remove the redundant parts
+       Path path1 = Path.of("/a/../b/./c");
+       System.out.println(path1.normalize());// \b\c => Just remove the redundant parts
     }
 }
 
