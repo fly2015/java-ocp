@@ -7,7 +7,7 @@
  */
 package java21.com.assigments.tricks.core.foundation.method;
 
-import java21.com.assigments.usage.classes.ComparableUsage;
+import java21.com.assigments.tricks.core.api.usage.oop.ComparableUsage;
 
 /**
  * 

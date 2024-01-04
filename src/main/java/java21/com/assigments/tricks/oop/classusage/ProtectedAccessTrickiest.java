@@ -7,7 +7,7 @@
  */
 package java21.com.assigments.tricks.oop.classusage;
 
-import java21.com.assigments.tricks.oop.classusage.access_modifier.ClassWithProtectedMethod;
+import java21.com.assigments.tricks.oop.access_modifier.ClassWithProtectedMethod;
 
 /**
  * 
