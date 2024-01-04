@@ -5,7 +5,7 @@
  * Da Nang, Viet Nam
  * All rights reserved.
  */
-package java21.com.assigments.tricks.core.foundation.block.p1;
+package java21.com.assigments.tricks.core.foundation.block.package_management.p1;
 
 /**
  * 
