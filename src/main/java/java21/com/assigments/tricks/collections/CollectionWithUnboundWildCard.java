@@ -21,6 +21,9 @@ public class CollectionWithUnboundWildCard
     public static void main(String[] args)
     {
         Collection<?> col = new ArrayList<String>();
+        Collection<Object> col1 = new ArrayList<Object>();
+        //col.addAll(col1);
+        
     }
 }
 

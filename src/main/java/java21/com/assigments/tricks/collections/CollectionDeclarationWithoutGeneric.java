@@ -21,7 +21,10 @@ public class CollectionDeclarationWithoutGeneric
     public static void main(String[] args)
     {
         Map m = new HashMap();
-        m.containsKey("1234");
+        m.put("", "");
+        m.put(1, 1);
+        System.out.println(m.containsKey(1));//true
+        System.out.println(m.containsKey(""));
     }
 }
 

@@ -40,6 +40,7 @@ public class LocalClassAccessModifier
         // cannot public, static, private, protected
         Comparable<String> c = new Comparable<String>()
         {
+            int x =0;
             @Override
             public int compareTo(String o)
             {

@@ -20,10 +20,11 @@ public class MapOnlyContainKeyOrContainValueMethod
 {
     public static void main(String[] args)
     {
-        Map m = new HashMap();
-        m.put(123, "456");
-        m.put("abc", "def");
-        //System.out.println(m.contains("123"));
+        Map<String, String> m = new HashMap<>();
+        final String put = m.put("123", "4566");
+        System.out.println(put);//null
+        final String put1 = m.put("123", "45667");
+        System.out.println(put1);//4566
     }
 }
 

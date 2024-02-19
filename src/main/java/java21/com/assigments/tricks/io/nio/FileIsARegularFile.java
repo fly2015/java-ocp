@@ -20,7 +20,7 @@ public class FileIsARegularFile
 {
     public static void main(String[] args)
     {
-        System.out.println(Files.isRegularFile(Path.of("/")));
+        System.out.println(Files.isRegularFile(Path.of("/a.txt")));
     }
 }
 

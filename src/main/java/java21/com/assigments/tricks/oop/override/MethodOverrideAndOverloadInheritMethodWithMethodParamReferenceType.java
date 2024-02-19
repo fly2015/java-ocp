@@ -22,13 +22,13 @@ public class MethodOverrideAndOverloadInheritMethodWithMethodParamReferenceType
         Parent15 parent1 = new Child15();
         Child15 child1 = new Child15();
         
-        parent.accept(parent);
-        parent.accept(parent1);
-        parent.accept(child1);
+        parent.accept(parent);//accept Parent
+        parent.accept(parent1);//accept Parent from Child
+        parent.accept(child1);//accept Parent from Child
         
-        parent1.accept(parent);
-        parent1.accept(parent1);
-        parent1.accept(child1);
+        parent1.accept(parent);//accept Parent from Child
+        parent1.accept(parent1);//accept Parent from Child
+        parent1.accept(child1);//accept Parent from Child
         
         // Input param will based on the type of ref
         child1.accept(parent);

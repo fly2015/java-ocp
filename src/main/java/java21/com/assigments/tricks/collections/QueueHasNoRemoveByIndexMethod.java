@@ -7,6 +7,9 @@
  */
 package java21.com.assigments.tricks.collections;
 
+import java.util.ArrayDeque;
+import java.util.Queue;
+
 /**
  * 
  *
@@ -15,9 +18,13 @@ package java21.com.assigments.tricks.collections;
  */
 public class QueueHasNoRemoveByIndexMethod
 {
-
+    public static void main(String[] args)
+    {
+        Queue<String> queue = new ArrayDeque<String>();
+        queue.remove(1);//remove object not by index
+        //queue.set(1, o) //not support
+    }
 }
-
 
 
 /*
