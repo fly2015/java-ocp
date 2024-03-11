@@ -2,7 +2,7 @@
  * SubPath.java
  *
  * Copyright by Hien Ng
- * Z�rich
+ * Da Nang
  * All rights reserved.
  */
 package java21.com.advanced.ch20_nio.path;

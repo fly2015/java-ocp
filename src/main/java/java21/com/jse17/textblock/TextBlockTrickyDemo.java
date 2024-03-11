@@ -2,7 +2,7 @@
  * TextBlockTrickyDemo.java
  *
  * Copyright by Hien Ng
- * Z�rich
+ * Da Nang
  * All rights reserved.
  */
 package java21.com.jse17.textblock;
