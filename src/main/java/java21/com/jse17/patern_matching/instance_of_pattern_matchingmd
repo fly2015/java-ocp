@@ -1,0 +1,11 @@
+## PATTERN MATCHING
+### Reassigning Pattern Variables
+	- possible
+	- prevent by using final modifier
+		
+### Pattern Variables and Expression
+#### Subtypes
+	- Limitations of Subtype Enforcement
+#### Flow Scoping
+	- Means the variable is only in scope when the compiler can definitively determine its type
+	- It is possible to use a pattern variable outside of the if statement, but only when the compiler can definitively determine its type.
